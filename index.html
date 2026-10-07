@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victus Studio | Gaming &amp; Esports Graphic Design</title>
+  <meta name="description" content="Victus Studio is a gaming and esports graphic design studio. Came to Dominate the Era of Designing.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="assets/images/brand/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="brand">
+      <img src="assets/images/brand/logo.svg" alt="" width="32" height="32">
+      <span>Victus Studio</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="menu-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ============ HOME / HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-slash" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <h1 class="hero-title"><span class="hero-name">Victus</span><span class="hero-sub">Studio</span></h1>
+    <p class="tagline">Came to Dominate the Era of Designing</p>
+    <p class="hero-text">Victus Studio is a graphic design studio specializing in gaming and esports. We design team graphics, tournament visuals, logos and social media content for teams, players and communities.</p>
+    <div class="btn-row">
+      <a href="#portfolio" class="btn btn-primary">Explore Our Work</a>
+      <a href="#contact" class="btn btn-ghost">Contact Us</a>
+    </div>
+  </div>
+  <div class="games" aria-label="Games we design for">
+    <div class="wrap games-inner">
+      <span>Free Fire</span><span>PUBG Mobile</span><span>Mobile Legends</span><span>VALORANT</span><span>And more</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT (light section) ============ -->
+<section class="section light" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <h2 class="h2">Visuals built for competitive gaming</h2>
+      <p class="lead">[Placeholder: Write a short statement about Victus Studio here. Edit it in index.html.]</p>
+      <p>[Placeholder: Add a second paragraph about your approach, your style, or how you work with clients.]</p>
+    </div>
+    <div>
+      <h3 class="h3">We create graphics for</h3>
+      <ul class="tick-list">
+        <li>Esports teams</li><li>Gaming organizations</li><li>Players</li><li>Content creators</li>
+        <li>Gaming communities</li><li>Social media pages</li><li>Gaming events</li><li>Other digital creators</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="section" id="portfolio">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h2">Portfolio</h2>
+      <p class="muted">Browse our latest esports, gaming and social media work. Tap any project to see it larger.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter portfolio"></div>
+    <div class="subfilters" id="subfilters" role="group" aria-label="Filter by category"></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <p class="empty" id="empty" hidden>No projects in this category yet. Check back soon.</p>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section alt" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h2">Services</h2>
+      <p class="muted">Everything your team, channel or community needs to look professional.</p>
+    </div>
+    <div class="services" id="services-list"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2 class="h2">Start a project</h2>
+      <p class="muted">Tell us what you need and we will get back to you.</p>
+      <ul class="contact-list" id="contact-list"></ul>
+      <div class="socials" id="socials"></div>
+    </div>
+    <form class="form" id="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <label>Name<input type="text" name="name" autocomplete="name" required></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required></label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-note" id="form-note" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>&copy; <span id="year"></span> Victus Studio. All rights reserved.</span>
+    <span class="muted">Came to Dominate the Era of Designing</span>
+  </div>
+</footer>
+
+<!-- ============ PROJECT PREVIEW ============ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Close preview">&times;</button>
+    <div class="modal-img"><img id="m-img" alt=""></div>
+    <div class="modal-info">
+      <p class="chip" id="m-cat"></p>
+      <h3 id="m-title"></h3>
+      <p id="m-desc" class="muted"></p>
+      <dl id="m-details"></dl>
+    </div>
+  </div>
+</div>
+
+<script src="js/projects.js"></script>
+<script src="js/site-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
