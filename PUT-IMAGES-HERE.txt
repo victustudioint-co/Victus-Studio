@@ -1,0 +1,1 @@
+Put your thumbnails images in this folder. You can delete this file after.
